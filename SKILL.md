@@ -37,6 +37,19 @@ maximize exam usefulness and minimize token usage.
  
 ---
  
+## Output Destination — Always Write to File
+ 
+**Never output the generated notes directly to chat.** Instead:
+ 
+1. Generate the full markdown content following the format in `references/format.md`
+2. Determine the output filename from the PPT filename (e.g. `Lecture3.pptx` → `Lecture3-notes.md`). If no filename is known, use `notes.md`
+3. Use the `Write` tool to save the content to `<ppt-filename>-notes.md` in the current working directory
+4. After writing, confirm to the user: `Notes saved to <filename>.md`
+ 
+Only output a short status line to chat (slide count, plan, confirmation). All study content goes into the file.
+ 
+---
+ 
 ## Output Format
  
 Read the full instructions in `references/format.md` before generating.
