@@ -20,43 +20,31 @@ All output uses exact slide wording — no paraphrasing, no hallucination, no ou
 
 ## How to Use on claude.ai (Recommended)
 
-This is the easiest way — no installation required.
+This is the recommended setup flow and requires no local installation.
 
-### Step 1 — Download the skill file
+### Step 1 — Download the ZIP from Releases
 
-Go to the [Releases](../../releases) page of this repo and download **`SKILL.md`** from the latest release.
+Go to the [Releases](../../releases) page of this repository and download the latest ZIP package.
 
-> Or download it directly: click `SKILL.md` in the file list above → click the **Download raw file** button (⬇ icon, top-right).
+### Step 2 — Open Claude and navigate to Skills
 
----
+1. Open [claude.ai](https://claude.ai) and sign in.
+2. In the left sidebar, open **Customize**.
+3. Select **Skills**.
 
-### Step 2 — Create a Claude Project
+### Step 3 — Create and upload the skill
 
-1. Open [claude.ai](https://claude.ai) and sign in
-2. In the left sidebar, click **"New Project"**
-3. Give it a name — e.g. `PPT Notes Generator`
-
----
-
-### Step 3 — Add the skill as Project Instructions
-
-1. Inside your project, click **"Project instructions"** (or the settings/pencil icon)
-2. Open the downloaded `SKILL.md` file in any text editor (Notepad, VS Code, etc.)
-3. **Select all** (Ctrl+A) → **Copy** (Ctrl+C)
-4. **Paste** the full content into the Project Instructions box
-5. Click **Save**
-
-> This tells Claude exactly how to behave whenever you use this project.
-
----
+1. In the Skills view, click the **+** icon.
+2. Select **Create Skill**.
+3. Choose the upload option and upload the ZIP file downloaded in Step 1.
 
 ### Step 4 — Generate notes from your PPT
 
-1. Inside the project, start a **New Chat**
-2. **Attach your `.ppt` or `.pptx` file** using the paperclip icon
-3. Send the message — Claude will automatically detect the file and start generating
+1. Start a new chat.
+2. Attach your `.ppt` or `.pptx` file using the paperclip icon.
+3. Send your message. Claude will detect the presentation and generate the output.
 
-That's it. Claude will output full study notes, Q&A, and a cheat sheet in one go.
+Claude will produce structured study notes, Q&A, and a quick-revision cheat sheet based on your slides.
 
 ---
 
@@ -71,6 +59,20 @@ That's it. Claude will output full study notes, Q&A, and a cheat sheet in one go
 | "cheat sheet only" | Generates cheat sheet only |
 | "Q&A only" | Generates Q&A section only |
 | "skip the cheat sheet" | Generates notes + Q&A only |
+
+### Sample usage (recommended)
+
+Use this simple flow in chat:
+
+1. Invoke the skill: `/ppt-to-notes`
+2. Send this prompt: `Generate study notes for this.`
+3. Attach your `.ppt` or `.pptx` file in the same message.
+
+Example message:
+
+```text
+/ppt-to-notes Generate study notes for this.
+```
 
 ---
 
