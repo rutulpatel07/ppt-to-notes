@@ -18,6 +18,14 @@ All output uses exact slide wording — no paraphrasing, no hallucination, no ou
 
 ---
 
+## ⭐ Support This Project
+
+If this skill helps you, please **star this repository** on GitHub! It helps others discover this tool and motivates continued development.
+
+**[Star on GitHub](../../)**
+
+---
+
 ## How to Use on claude.ai (Recommended)
 
 This is the recommended setup flow and requires no local installation.
@@ -184,6 +192,18 @@ ppt-to-notes/
 
 - A free or paid [claude.ai](https://claude.ai) account
 - A `.ppt` or `.pptx` file with readable text (not image-only)
+
+---
+
+## Contact & Connect
+
+Found this skill useful? Have feedback or ideas? Reach out:
+
+- **Email**: contact@rutulpatel.tech
+- **LinkedIn**: [Click Here](https://www.linkedin.com/in/patelrutul07/)
+- **GitHub Issues**: [Report bugs or request features](../../issues)
+
+I'd love to hear how you're using it!
 
 ---
 
